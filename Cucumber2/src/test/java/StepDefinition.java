@@ -13,6 +13,7 @@ public class StepDefinition
 	@Given("User opens browser")
 	public void user_opens_browser() 
 	{
+		//Add comment - 2nd Sept
 		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\java\\Eclipse installation\\eclipse-workspace\\Cucumber2\\src\\test\\resources\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -53,7 +54,7 @@ public class StepDefinition
 		}
 		
 		/*String actualTitle = driver.getTitle();
-		String expectedTitle="Facebook – log in or sign up";
+		String expectedTitle="Facebook â€“ log in or sign up";
 		if(actualTitle.equalsIgnoreCase(expectedTitle))
 		{
 			System.out.println("validation scuccess. Actual title is "+actualTitle);
